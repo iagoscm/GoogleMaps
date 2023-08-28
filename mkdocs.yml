@@ -1,0 +1,62 @@
+site_name: Google Maps
+
+repo_name: '2022.2-GoogleMaps'
+repo_url: 'https://github.com/Requisitos-de-Software/2022.2-GoogleMaps'
+
+copyright: 'Copyright &copy; 2022 Google Maps'
+
+theme:
+  name: material
+  language: pt
+  logo: ./assets/logos/google-logo.png
+  font:
+    text: Product Sans
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - toc.follow
+  palette:
+
+    # Esquema para o modo claro
+    - scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+      primary: red
+      accent: yellow
+
+    # Esquema para o modo escuro
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+      primary: indigo
+      accent: green
+
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - include_dir_to_nav
+
+docs_dir: './docs'
+
+nav:
+  - Início: index.md
+  - Planejamento: planejamento
+  - Encontros: encontros
+  - Pré-Rastreabilidade: pre_rastreabilidade
+  - Elicitação: elicitacao
+  - Modelagem: modelagem
+  - Análise:
+     - Verificação - Star+: analise/verificacao
+     - Verificação - Google Maps: analise/Verificacao II
+     - Validação: analise/Validacao
+  - Pós-rastreabilidade: pos-rastreabilidade/matriz.md
+
+  - Apresentações: entregas.md
+  - Conclusão: conclusao
